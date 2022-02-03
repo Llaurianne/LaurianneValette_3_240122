@@ -1,5 +1,5 @@
 body:not(i) {
-    font-family: 'roboto', sans-serif;
+    font-family: $font-main;
   }
 
 h1 {
@@ -16,72 +16,16 @@ h3 {
 }
 
 p {
-    font-size:16px;
     font-weight:300;
-    padding: 0 0 6px 12px;
+    padding: 0 12px;
 }
 
-.shrikhand {
-    font-family: 'shrikhand', sans-serif;
+a {
+    color:inherit;
+    text-decoration: inherit;
 }
 
-header {
-    p {
-        font-size:30px;
-    }
-}
-
-input {
-    font-size: 16px; 
-}
-
-.presentation {
-    p {
-        font-size:18px;
-    }
-}
-
-button {
-    font-size: 16px;
-}
-
-.operating {
-    p {
-        font-weight:500;
-    }
-    p:first-of-type {
-        color:white;
-        font-size: 13px;
-    }
-    i {
-        font-size:18px;
-        color:$color4;
-    }  
-}
-
-.restaurants {
-    .card {
-        &__label {
-            font-size :14px;
-            font-weight: 500;
-        }
-    }
-    i {
-        font-size:24px;
-    }
-}
-
-footer {
-    color:white;
-    .shrikhand {
-        font-size: 16px;
-    }
-    p {
-        font-weight: normal;
-        line-height: 1.3;
-    }
-    i {
-        font-size:12px;
-    }
-
+.font-logo {
+    font-family: $font-logo;
+    font-size:30px;
 }

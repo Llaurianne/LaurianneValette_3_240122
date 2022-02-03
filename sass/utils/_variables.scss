@@ -1,7 +1,16 @@
 $color1:#9356DC;
 $color2:#FF79DA;
 $color3:#99E2D0;
+
 $color-bg:#F6F6F6;
 $color-bg2: darken($color-bg, 4%);
-$color-shaddow: darken($color-bg, 10%);
-$color4: darken($color-bg, 47%);
+
+$color-font-lgt: white;
+$color-font-med: darken(white,51%);
+
+$color-shadow: darken($color-bg, 10%);
+$shadow: 0 6px 8px $color-shadow;
+
+$font-logo: 'shrikhand', sans-serif;
+$font-main: 'roboto', sans-serif;
+
