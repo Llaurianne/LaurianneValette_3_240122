@@ -1,4 +1,6 @@
 # Ohmyfood
+Repository GitHub : https://github.com/Llaurianne/LaurianneValette_3_240122.git  
+GitHub Pages : https://llaurianne.github.io/LaurianneValette_3_240122/
 ***
 ## Parcours Développeur web d'OpenClassrooms
 Projet n°3 : Création du site Ohmyfood! Paris  
