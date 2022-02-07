@@ -43,20 +43,20 @@
         line-height: 50px;
     }
     .fa-utensils, .fa-fish, .fa-carrot {
-        animation: spinner 2s linear;
+        animation: spinner 2.5s linear;
         animation-fill-mode: both;
-        animation-iteration-count: 1.5;
+        animation-iteration-count: 1.2;
     }
     .fa-fish {
-        animation-delay: 400ms;
+        animation-delay: 250ms;
     }
     .fa-carrot {
-        animation-delay: 800ms;
+        animation-delay: 500ms;
     }
 }
 
 .localisation {
-    padding: 14px;
+    padding: 15px;
     text-align: center;
     background-color: $color-bg2;
     box-shadow: inset 0 2px 2px $color-shadow;
@@ -69,26 +69,49 @@ input {
     font-size: 16px; 
 }
 
+.concept {
+    @include m-devices {
+        display:flex;
+        margin:auto;
+        justify-content: space-between;
+        width:92%;
+        max-width:1000px;
+    }
+}
+
 .presentation {
     text-align: center;
     background-color: $color-bg;
-    padding : 30px 0;
+    padding : 28px 5%;
     h1 {
-        padding: 12px 48px;
+        padding: 11px 8%;
     }
     p {
         font-size:18px;
     }
+    @include m-devices {
+        width: 40%;
+        margin:46px 0;
+        padding:10px 4%;
+        border-radius: 26px;
+        box-shadow: $shadow;
+        display:flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        h1 {
+            padding: 12px;
+        }
+    }
 }
 
 .operating {
-    padding: 46px 5%;
-    font-weight:500;
-    &__step {
+    margin: 46px 5%;
+    .step {
         background-color: $color-bg;
         padding:27px 10px;
-        border-radius: 26px;
-        margin : 16px 0 24px 10px;
+        border-radius: $radius;
+        margin : 24px 0 0 12px;
         box-shadow: $shadow;
         &:hover {
             background-color: lighten(saturate($color1, 44%),36%);
@@ -108,25 +131,35 @@ input {
         padding:4px 8px;
         border-radius: 12px;
         position: relative;
-        left:-18px;
+        left:-19px;
     }
     i {
         font-size:18px;
         color:$color-font-med;
         width:35px;
-    }    
+    }
+    @include m-devices {
+        width: 45%;
+        margin:46px 5%;
+        &__step:last-of-type {
+            margin-bottom:0;
+            padding-bottom:0;
+        }
+    }
 }
 
 .restaurants {
     background-color: $color-bg;
-    padding: 48px 5%;
+    padding: 53px 5%;
+    h1 {
+        padding-bottom: 6px;
+    }
     .card {
         display: block;
         background-color: white;
         border-radius: 12px;
         overflow: hidden;
-        margin: 16px 0;
-        padding-bottom:15px;
+        margin: 17px 0;
         position:relative;
         box-shadow: $shadow;
         &__label {
@@ -160,6 +193,12 @@ input {
         .portrait {
             object-position: center -153px;
         }
+        h2 {
+            padding: 12px 0 3px 15px;
+        }
+        h2+p {
+            padding: 0 0 17px 15px;
+        }
         i {
             font-size:24px;
             position:absolute;
@@ -178,6 +217,30 @@ input {
                 background-position: 0 0;
                 cursor:pointer;
             }
+        }
+    }
+    @include s-devices {
+        display: flex;
+        flex-wrap:wrap;
+        justify-content: space-between;
+        h1 {
+            width:100%;
+        }
+        .card {
+            width: 48%;
+        }
+    }
+    @include m-devices {
+        margin: 0 auto 46px auto;    
+        width:92%;
+        max-width:1000px;
+        padding:36px 4%;
+        border-radius: 26px;
+        box-shadow: $shadow;
+    }
+    @include desktop {
+        .card {
+            width: 31%;
         }
     }
 }

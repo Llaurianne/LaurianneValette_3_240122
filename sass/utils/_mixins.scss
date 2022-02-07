@@ -1,0 +1,11 @@
+@mixin s-devices {
+    @media all and (min-width:576px) {@content;}
+}
+
+@mixin m-devices {
+    @media all and (min-width:768px) {@content;}
+}
+
+@mixin desktop {
+    @media all and (min-width:992px) {@content;}
+}
