@@ -157,7 +157,7 @@ input {
     .card {
         display: block;
         background-color: white;
-        border-radius: 12px;
+        border-radius: $radius-card;
         overflow: hidden;
         margin: 17px 0;
         position:relative;

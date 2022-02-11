@@ -1,13 +1,14 @@
 button {
-    width:218px;
     padding: 16px 20px;
-    margin: 30px;
+    margin: 30px auto;
+    min-width:185px;
     font-size: 16px;
     background-image: linear-gradient(to left top, $color1,$color2);
     color: $color-font-lgt;
     border-radius: $radius;
     border:0;
     box-shadow: $shadow;
+    white-space: nowrap;
     &:hover {
         background-image: linear-gradient(to left top, lighten($color1, 10%), lighten($color2, 10%));
         box-shadow: 0 6px 8px darken($color-bg, 20%);
