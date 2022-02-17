@@ -205,19 +205,6 @@ input {
             bottom:32px;
             right:16px;
         }
-        .fas {
-            color: transparent;
-            -webkit-background-clip: text;
-            transition: all 1s;
-            background-image: linear-gradient($color1, $color2);
-            background-repeat:no-repeat;
-            z-index:1;
-            background-position: 0 32px;
-            &:hover {
-                background-position: 0 0;
-                cursor:pointer;
-            }
-        }
     }
     @include s-devices {
         display: flex;
@@ -239,6 +226,7 @@ input {
         box-shadow: $shadow;
     }
     @include desktop {
+        padding:36px 3%;
         .card {
             width: 31%;
         }

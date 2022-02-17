@@ -1,11 +1,11 @@
 @mixin s-devices {
-    @media all and (min-width:576px) {@content;}
+    @media all and (min-width:map-get($devices-width, s-devices)) {@content;}
 }
 
 @mixin m-devices {
-    @media all and (min-width:768px) {@content;}
+    @media all and (min-width:map-get($devices-width, m-devices)) {@content;}
 }
 
 @mixin desktop {
-    @media all and (min-width:992px) {@content;}
+    @media all and (min-width:map-get($devices-width, desktop)) {@content;}
 }
