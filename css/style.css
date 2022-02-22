@@ -105,7 +105,7 @@ header p {
 header a {
   font-size: 20px;
   position: absolute;
-  width: 100%;
+  width: 94%;
   max-width: 1000px;
   top: 20px;
   left: 6%;
@@ -485,19 +485,19 @@ main button {
   }
 }
 .dishes > div:nth-child(3) {
-  animation: apparition 1s 300ms;
+  animation: apparition 1.5s 600ms;
   animation-fill-mode: both;
 }
 .dishes > div:nth-child(4) {
-  animation: apparition 1s 400ms;
+  animation: apparition 1.5s 800ms;
   animation-fill-mode: both;
 }
 .dishes > div:nth-child(5) {
-  animation: apparition 1s 500ms;
+  animation: apparition 1.5s 1000ms;
   animation-fill-mode: both;
 }
 .dishes > div:nth-child(6) {
-  animation: apparition 1s 600ms;
+  animation: apparition 1.5s 1200ms;
   animation-fill-mode: both;
 }
 .dishes h3 {
